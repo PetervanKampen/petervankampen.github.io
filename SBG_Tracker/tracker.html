@@ -4,9 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
-    Test
+    <div class="container">
+
+        <div class="hero">          
+            <input type="text" class="form-control" placeholder="Hero Name">
+            <button type="button" class="btn btn-outline-secondary btn-sm" onclick="statBlock('0')">Stats</button>
+            <div class="stats" id="stats0" style="display: none;">
+                <table style="width:90%">
+                    <tr>
+                        <td>Mv</td>
+                        <td>F</td>
+                        <td>S</td>
+                        <td>D</td>
+                        <td>A</td>
+                        <td>W</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable='true'></td>
+                        <td contenteditable='true'></td>
+                        <td contenteditable='true'></td>
+                        <td contenteditable='true'></td>
+                        <td contenteditable='true'></td>
+                        <td contenteditable='true'></td>
+                        <td contenteditable='true'></td>               
+                      </tr>
+                </table>
+            </div>
+            <div class="resources">
+                <div>
+                    <p><b>Might</b></p> 
+                    <br>
+                    <p contenteditable="">0</p>
+                    <br>
+                    <button onclick="lowerMight('0')">&#8249;</button>
+                    <p id="might0">0</p>
+                    <button onclick="upMight('0')">&#8250;</button>
+                </div>
+                <div>
+                    <p><b>Will</b></p> 
+                    <br>
+                    <p contenteditable="">0</p>
+                    <br>
+                    <button onclick="lowerMight('0')">&#8249;</button>
+                    <p id="might0">0</p>
+                    <button onclick="upMight('0')">&#8250;</button>
+                </div>
+                <div>
+                    <p><b>Fate</b></p> 
+                    <br>
+                    <p contenteditable="">0</p>
+                    <br>
+                    <button onclick="lowerMight('0')">&#8249;</button>
+                    <p id="might0">0</p>
+                    <button onclick="upMight('0')">&#8250;</button>
+                </div>
+                <div>
+                    <p><b>Wounds</b></p> 
+                    <br>
+                    <p contenteditable="">0</p>
+                    <br>
+                    <button onclick="lowerMight('0')">&#8249;</button>
+                    <p id="might0">0</p>
+                    <button onclick="upMight('0')">&#8250;</button>
+                </div>
+                
+            </div>
+
+        </div>
+
+
+    </div> 
+
+    <button type="button" class="btn btn-outline-light btn-sm newHero" onclick="">Add Hero</button>
 </body>
 </html>
