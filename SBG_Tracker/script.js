@@ -56,3 +56,76 @@ function upWound(id){
     var newContent = parseInt(target.innerHTML) + 1;
     target.innerHTML = newContent;
 }
+
+var heroAmount = 0;
+
+function addHero(){
+    heroAmount++;
+    document.getElementById("container").innerHTML += 
+    `<div class="hero">          
+            <input type="text" class="form-control" placeholder="Hero Name">
+            <button type="button" class="btn btn-outline-secondary btn-sm" onclick="statBlock('`+heroAmount+`')">Stats</button>
+            <div class="stats" id="stats`+heroAmount+`" style="display: none;">
+                <table style="width:90%">
+                    <tr>
+                        <td>Mv</td>
+                        <td>F</td>
+                        <td>S</td>
+                        <td>D</td>
+                        <td>A</td>
+                        <td>W</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td contenteditable='true'></td>
+                        <td contenteditable='true'></td>
+                        <td contenteditable='true'></td>
+                        <td contenteditable='true'></td>
+                        <td contenteditable='true'></td>
+                        <td contenteditable='true'></td>
+                        <td contenteditable='true'></td>               
+                      </tr>
+                </table>
+            </div>
+            <div class="resources">
+                <div>
+                    <p><b>Might</b></p> 
+                    <br>
+                    <p contenteditable="">0</p>
+                    <br>
+                    <button onclick="lowerMight('`+heroAmount+`')">&#8249;</button>
+                    <p id="might`+heroAmount+`">0</p>
+                    <button onclick="upMight('`+heroAmount+`')">&#8250;</button>
+                </div>
+                <div>
+                    <p><b>Will</b></p> 
+                    <br>
+                    <p contenteditable="">0</p>
+                    <br>
+                    <button onclick="lowerWill('`+heroAmount+`')">&#8249;</button>
+                    <p id="will`+heroAmount+`">0</p>
+                    <button onclick="upWill('`+heroAmount+`')">&#8250;</button>
+                </div>
+                <div>
+                    <p><b>Fate</b></p> 
+                    <br>
+                    <p contenteditable="">0</p>
+                    <br>
+                    <button onclick="lowerFate('`+heroAmount+`')">&#8249;</button>
+                    <p id="fate`+heroAmount+`">0</p>
+                    <button onclick="upFate('`+heroAmount+`')">&#8250;</button>
+                </div>
+                <div>
+                    <p><b>Wounds</b></p> 
+                    <br>
+                    <p contenteditable="">0</p>
+                    <br>
+                    <button onclick="lowerWound('`+heroAmount+`')">&#8249;</button>
+                    <p id="wound`+heroAmount+`">0</p>
+                    <button onclick="upWound('`+heroAmount+`')">&#8250;</button>
+                </div>
+                
+            </div>
+
+        </div>`;
+}
