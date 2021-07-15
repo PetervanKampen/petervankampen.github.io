@@ -63,7 +63,7 @@ function addHero(){
     heroAmount++;
     document.getElementById("container").innerHTML += 
     `<div class="hero">          
-            <input type="text" class="form-control" placeholder="Hero Name">
+            <p id="heroName" contenteditable="true"></p>
             <button type="button" class="btn btn-outline-secondary btn-sm" onclick="statBlock('`+heroAmount+`')">Stats</button>
             <div class="stats" id="stats`+heroAmount+`" style="display: none;">
                 <table style="width:90%">
@@ -91,7 +91,7 @@ function addHero(){
                 <div>
                     <p><b>Might</b></p> 
                     <br>
-                    <input type="text" class="form-control" placeholder="Amount">
+                    <p id="resourceAmount" contenteditable="true"></p>
                     <br>
                     <button onclick="lowerMight('`+heroAmount+`')">&#8249;</button>
                     <p id="might`+heroAmount+`">0</p>
@@ -100,7 +100,7 @@ function addHero(){
                 <div>
                     <p><b>Will</b></p> 
                     <br>
-                    <input type="text" class="form-control" placeholder="Amount">
+                    <p id="resourceAmount" contenteditable="true"></p>
                     <br>
                     <button onclick="lowerWill('`+heroAmount+`')">&#8249;</button>
                     <p id="will`+heroAmount+`">0</p>
@@ -109,7 +109,7 @@ function addHero(){
                 <div>
                     <p><b>Fate</b></p> 
                     <br>
-                    <input type="text" class="form-control" placeholder="Amount">
+                    <p id="resourceAmount" contenteditable="true"></p>
                     <br>
                     <button onclick="lowerFate('`+heroAmount+`')">&#8249;</button>
                     <p id="fate`+heroAmount+`">0</p>
@@ -118,7 +118,7 @@ function addHero(){
                 <div>
                     <p><b>Wounds</b></p> 
                     <br>
-                    <input type="text" class="form-control" placeholder="Amount">
+                    <p id="resourceAmount" contenteditable="true"></p>
                     <br>
                     <button onclick="lowerWound('`+heroAmount+`')">&#8249;</button>
                     <p id="wound`+heroAmount+`">0</p>

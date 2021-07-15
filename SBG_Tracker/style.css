@@ -10,6 +10,23 @@ body{
     border-radius: 25px;
 
     background-color: lightgray;
+
+    text-align: center;
+}
+
+#heroName{
+    width: 100%;
+    background-color: white;
+    color: black;
+    font-size: 24px;
+}
+
+#resourceAmount{
+    width: 100%;
+    background-color: white;
+    color: black;
+    font-size: 22px;
+    display: block;
 }
 
 .hero td{
@@ -43,7 +60,7 @@ body{
 }
 
 .resources div{
-    background-color: white;
+    background-color: gray;
     text-align: center;
     border-radius: 5px;
     padding: 5%;
