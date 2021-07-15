@@ -62,7 +62,8 @@ var heroAmount = 0;
 function addHero(){
     heroAmount++;
     document.getElementById("container").innerHTML += 
-    `<div class="hero">          
+    `<div class="hero">  
+            <h5><b>Hero Name</b></h5>         
             <p id="heroName" contenteditable="true"></p>
             <button type="button" class="btn btn-outline-secondary btn-sm" onclick="statBlock('`+heroAmount+`')">Stats</button>
             <div class="stats" id="stats`+heroAmount+`" style="display: none;">
