@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scenario Selector</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header box">
+            <h1>Scenario selector</h1>
+            <p>
+                Click the button below to randomly select three Scenarios
+                <br><br>
+                After the three scenarios have been selected the app will randomly pick wether good or evil will get to veto first.
+                Players can choose to roll a dice for this instead if they want to.
+            </p>
+            <button onclick="generate()">
+                Select Scenarios
+            </button>
+        </div>
+
+        <div class="side_selection box hidden">
+            <h2>The first veto will be made by:</h2>
+            <h1></h1>
+        </div>
+
+        <div class="scenario_1 scenario box hidden">
+            <div class="title"></div>
+        </div>
+
+        <div class="scenario_2 scenario box hidden">
+            <div class="title"></div>
+        </div>
+
+        <div class="scenario_3 scenario box hidden">
+            <div class="title"></div>
+        </div>
+    </div> 
+</body>
+</html>

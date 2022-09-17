@@ -1,0 +1,63 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gold: #ffd700;
+    --white: #fafafa;
+}
+
+body{
+    background-color: gray;
+}
+
+.container{
+    padding: 20px;
+}
+
+.box {
+    background-color: var(--white);
+    border: 3px solid var(--gold);
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.header h1, .header p{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.header button {
+    margin: 10px;
+    width: calc(100% - 20px);
+    padding: 15px;
+    border-radius: 10px;
+    color: var(--white);
+    background-color: var(--gold);
+    border: none;
+    font-size: 25px;
+    text-shadow: 2px 2px 10px black;
+    box-shadow: 1px 1px 5px 0px black;
+}
+
+.hidden {
+    display: none;
+}
+
+.side_selection h2{
+    text-align: center;
+}
+
+.side_selection h1{
+    text-align: center;
+    margin: 20px 0;
+}
+.side_selection h1.good{
+    color: green;
+}
+.side_selection h1.evil{
+    color: red;
+}

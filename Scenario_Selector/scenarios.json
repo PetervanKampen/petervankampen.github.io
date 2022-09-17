@@ -1,0 +1,102 @@
+{
+    "scenarios": [
+        {
+            "id": 1,
+            "name": "Domination",
+            "outline": "Players fight to control five Objectives scattered across the battlefield",
+            "layout": "Set up terrain as described on page 136 of the Middle-earth Strategy Battle Game rules manual. Then, place five Objective markers on the battlefield; one is automatically placed in the centre of the board. To place the other Objectives, both players roll a D6. The player with the highest score places one Objective marker anywhere on the battlefield at least 12 inch away from the existing Objective and 6 inch away from any board edge. Their opponent then places a third Objective at least 12inch  away from existing Objectives and at least 6 inch away from any board edge. The players then alternate placing the remaining two Objectives, according to the restriction noted earlier.",
+            "starting_position": "Both players roll a D6 – the player with the highest result chooses one of the deployment zones. They then select a warband in their force to deploy within 24 inch of their board edge. Models may not be deployed further than 6 inch from the captain of their warband. When this has been done, the opposing player chooses one of their warbands and deploys it within 24 inch of their board edge, as described above. Players then alternate until all of their warbands have been placed.",
+            "priority": "Both players roll a D6. The player with the highest score has Priority in the first turn",
+            "objectives": "The game lasts until the end of a turn in which one force has been reduced to a quarter (25%) of its starting number of models or below, at which point the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw",
+            "victory_points": [
+                "You score 2 Victory Points for each Objective marker that has at least one of your models, and no enemy models, within 3 inch.",
+                "You score 1 Victory Point for each Objective marker that has both friendly and enemy models, but more friendly than enemy models, within 3 inch.",
+                "You score 1 Victory Point for causing one or more Wounds on the enemy leader (Wounds prevented by a successful Fate roll do not count) or if you kill the enemy leader.",
+                "You score 1 Victory Point if the enemy force is Broken at the end of the game."
+            ],
+            "special_rules": [
+                "This scenario has no special rules"
+            ],
+            "image": "domination.png"
+        },
+        {
+            "id": 2,
+            "name": "To the Death!",
+            "outline": "Victory goes to the force which can crush the foe and slay the enemy leader.",
+            "layout": "Set up terrain as described on page 136 of the Middle-earth Strategy Battle Game rules manual.",
+            "starting_position": "Both players roll a D6 – the player with the highest result chooses one of the deployment zones. They then select a warband in their force to deploy within 12 inch of their board edge. Models may not be deployed further than 6 inch from the captain of their warband. When this has been done, the opposing player chooses one of their warbands and deploys it within 12 inch of their board edge, as described above. Players then alternate until all of their warbands have been placed.",
+            "priority": "Both players roll a D6. The player with the highest score has Priority in the first turn",
+            "objectives": "The game lasts until the end of a turn in which one force has been reduced to a quarter (25%) of its starting number of models or below, at which point the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw",
+            "victory_points": [
+                "You score 1 Victory Point for causing one or more Wounds on the enemy leader (Wounds prevented by a successful Fate roll do not count). If you kill the enemy leader, you instead score 3 Victory Points.",
+                "You score 3 Victory Points if the enemy force is Broken at the end of the game. If the enemy force is Broken and your force is unbroken, you instead score 5 Victory Points.",
+                "You score 1 Victory Point if you have at least one banner remaining at the end of the game. If you have at least one banner remaining and your opponent has none remaining, then you instead score 2 Victory Points",
+                "You score 2 Victory Points if the enemy force is reduced to 25% of its starting models at the end of the game."
+            ],
+            "special_rules": [
+                "This scenario has no special rules"
+            ],
+            "image": "to_the_death.png"
+        },
+        {
+            "id": 3,
+            "name": "Hold Ground",
+            "outline": "Control the centre of the battlefield, no matter the cost",
+            "layout": "Set up terrain as described on page 136 of the Middle-earth Strategy Battle Game rules manual. Once the battlefield has been set up, an Objective marker is placed in the centre of the battlefield. Players must also agree which direction is north – this is important for determining where and when Reinforcements arrive from",
+            "starting_position": "At the battle’s start, the forces are yet to arrive – models are not deployed at the start of the game, but will enter as the game continues (see Special Rules later).",
+            "priority": "Both players roll a D6. The player with the highest score has Priority in the first turn",
+            "objectives": "Once one force has been Broken, the game might suddenly end. At the end of each turn, after this condition has been met, roll a D6. On a 1-2, the game ends – otherwise, the battle continues for another turn. At the end of the game, the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw",
+            "victory_points": [
+                "You score 3 Victory Points if you have more models within 6 inch of the Objective marker than your opponent. If you have twice as many models within 6 inch of the Objective than your opponent, then you instead score 5 Victory Points. If you have three times as many models within 6 inch of the Objective than your opponent, or you are the only player to have models within 6 inch of the Objective marker, then you instead score 7 Victory Points.",
+                "You score 1 Victory Point for causing one or more Wounds on the enemy leader (Wounds prevented by a successful Fate roll do not count). If you kill the enemy leader, you instead score 2 Victory Points.",
+                "You score 1 Victory Point if the enemy force is Broken at the end of the game. If the enemy force is Broken and your force is unbroken, you instead score 3 Victory Points."
+            ],
+            "special_rules": [
+                {
+                    "name": "Mealstrom of Battle",
+                    "description": "At the end of your Move phase, roll a D6 for each of your warbands not on the battlefield and consult the chart below (the warband’s captain can use Might to alter the roll either up or down). Models can’t charge in the turn that they arrive but otherwise act normally. Roll for each warband separately, deploy the models in the warband (if the D6 allows) then roll for the next. Warbands yet to arrive count as being on the battlefield for the purposes of determining if your force is Broken",
+                    "table": [
+                        [
+                            1, 
+                            2, 
+                            3, 
+                            4, 
+                            5, 
+                            6
+                        ],
+                        [
+                            "The warband does not arrive.",
+                            "Your opponent chooses a point on either the north or south board edges at least 6 inch from a corner – all models in the warband move onto the battlefield from this point.",
+                            "Your opponent chooses a point on either the east or west board edges at least 6 inch from a corner – all models in the warband move onto the battlefield from this point.",
+                            "You choose a point on either the north or south board edges at least 6 inch from a corner – all models in the warband move onto the battlefield from this point.",
+                            "You choose a point on either the east or west board edges at least 6 inch from a corner – all models in the warband move onto the battlefield from this point.",
+                            "You choose a point on any board edge at least 6  inch from a corner – all models in the warband move onto the battlefield from this point."
+                        ]
+                    ]
+                }
+            ],
+            "image": "hold_ground.png"
+        },
+        {
+            "id": 4,
+            "name": "Lords of Battle",
+            "outline": "A pitched battle where victory goes to the player who causes the most carnage.",
+            "layout": "Set up terrain as described on page 136 of the Middle-earth Strategy Battle Game rules manual.",
+            "starting_position": "Both players roll a D6 – the player with the highest result chooses one of the deployment zones. They then select a warband in their force to deploy within 24 inch of their board edge, but at least 1 inch away from enemy models. Models may not be deployed further than 6 inch from the captain of their warband. When this has been done, the opposing player chooses one of their warbands and deploys it within 24 inch of their board edge as described above. Players then alternate until all warbands have been placed.",
+            "priority": "Both players roll a D6. The player with the highest score has Priority in the first turn",
+            "objectives": "Once one force has been Broken, the game might suddenly end. At the end of each turn after this condition has been met, roll a D6. On a 1-2, the game ends – otherwise, the battle continues for another turn. At the end of the game, the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw",
+            "victory_points": [
+                "For this Scenario you need to keep track of your Wound Tally. Your Wound Tally is equal to the number of Wounds that your army inflicted upon your opponent’s army, plus any Fate points that your opponent pent. Hero models that are removed from the game with unspent Fate points will add 1 to the Wound Tally for each one unspent. Models that flee because their force is Broken count towards the Wound Tally, but mounts that flee do not. You score 3 Victory Points if your Wound Tally is greater than your opponent’s. If your Wound Tally is at least twice as large as your opponent’s, then you instead score 5 Victory Points. If your Wound Tally is at least three times as large as your opponent’s, or your opponent has no models left on the board, then you instead score 7 Victory Points.",
+                "You score 1 Victory Point for causing one or more Wounds on the enemy leader (Wounds prevented by a successful Fate roll do not count). If you kill the enemy leader, you instead score 2 Victory Points",
+                "You score 1 Victory Point if the enemy force is Broken at the end of the game. If the enemy force is Broken and your force is unbroken, you instead score 3 Victory Points."
+            ],
+            "special_rules": [
+                {
+                    "name": "A Time of Heroes",
+                    "description": "Each time your force kills an enemy Hero in a Fight, one of your Hero models in the same Fight (your choice) regains a point of Might lost earlier in the battle."
+                }
+            ],
+            "image": "lords_of_battle.png"
+        }
+    ]
+}
