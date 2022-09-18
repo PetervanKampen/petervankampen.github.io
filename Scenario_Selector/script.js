@@ -119,4 +119,7 @@ const expandScenario = (element) => {
         element.classList.add('expanded')
     }
 }
-    
+ 
+const loadAll = () => {
+    console.log('test')
+}
