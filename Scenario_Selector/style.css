@@ -47,7 +47,7 @@ body{
     display: none;
 }
 
-.side_selection h2{
+.side_selection h3{
     text-align: center;
 }
 
@@ -60,4 +60,74 @@ body{
 }
 .side_selection h1.evil{
     color: red;
+}
+
+.scenario {
+    height: 60px;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+.scenario.expanded {
+    height: max-content;
+}
+
+.scenario .scenario_heading {
+    position: relative;
+    
+}
+.scenario .scenario_heading h3 {
+    text-align: center;
+}
+.scenario .scenario_heading .expand {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    height: 100%;
+
+    border: none;
+    background-color: none;
+    background: none;
+
+    transition: .3s ease;
+}
+.scenario.expanded .scenario_heading .expand {
+    -webkit-transform:rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.scenario .scenario_body {
+    margin-top: 20px;
+    padding-top: 10px;
+    text-align: center;
+    border-top: 1px solid gray;
+}
+.scenario .scenario_body h3 {
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.scenario .scenario_body .layout img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.scenario .scenario_body .victory_points ul {
+    padding-left: 15px;
+}
+.scenario .scenario_body .victory_points ul li {
+    padding-bottom: 5px;
+}
+
+.scenario .scenario_body .special_rules p {
+    margin-bottom: 5px;
+}
+.scenario .scenario_body .special_rules table {
+    margin-top: 10px;
+}
+.scenario .scenario_body .special_rules table td {
+    min-width: 30px;
+    padding: 5px;
 }
