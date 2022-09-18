@@ -126,8 +126,9 @@ body{
 }
 .scenario .scenario_body .special_rules table {
     margin-top: 10px;
+    border-collapse: collapse;
 }
 .scenario .scenario_body .special_rules table td {
-    min-width: 30px;
-    padding: 5px;
+    min-width: 40px;
+    padding: 10px 5px;
 }

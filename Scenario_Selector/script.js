@@ -69,21 +69,21 @@ const generate = () => {
                         if(single.table){
                             let table = document.createElement('table')
                             const row = table.insertRow();
+                            row.style.borderBottom = '1px solid #ffd700'
                             const cell1 = row.insertCell()
                             cell1.appendChild(document.createTextNode('D6'))
-                            cell1.style.border = '1px solid black';
                             const cell2 = row.insertCell()
                             cell2.appendChild(document.createTextNode(('Result')))
-                            cell2.style.border = '1px solid black';
 
                             for (let index = 0; index < single.table[0].length; index++) {
                                 const row = table.insertRow();
                                 const cell1 = row.insertCell()
                                 cell1.appendChild(document.createTextNode(single.table[0][index]))
-                                cell1.style.border = '1px solid black';
                                 const cell2 = row.insertCell()
                                 cell2.appendChild(document.createTextNode(single.table[1][index]))
-                                cell2.style.border = '1px solid black';
+                                if(index % 2 == 0) {
+                                    row.style.backgroundColor = '#ffd70033'
+                                }
                             }
 
                             special_rules.appendChild(table)
