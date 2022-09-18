@@ -58,6 +58,7 @@ const generate = () => {
                 special_rules.innerHTML = '<h3>Special Rules</h3>';
                 if(scenario.special_rules[0] !== 'This scenario has no special rules'){
                     special_rules.classList.remove('hidden')
+                    const gold = getComputedStyle(document.documentElement).getPropertyValue('--gold');
                     scenario.special_rules.forEach(single => {
                         let p = document.createElement('p')
                         let span = document.createElement('span')
@@ -69,7 +70,8 @@ const generate = () => {
                         if(single.table){
                             let table = document.createElement('table')
                             const row = table.insertRow();
-                            row.style.borderBottom = '1px solid #ffd700'
+                            row.style.borderBottom = '2px solid ' + gold
+                            row.style.backgroundColor = gold + '33'
                             const cell1 = row.insertCell()
                             cell1.appendChild(document.createTextNode('D6'))
                             const cell2 = row.insertCell()
@@ -81,8 +83,8 @@ const generate = () => {
                                 cell1.appendChild(document.createTextNode(single.table[0][index]))
                                 const cell2 = row.insertCell()
                                 cell2.appendChild(document.createTextNode(single.table[1][index]))
-                                if(index % 2 == 0) {
-                                    row.style.backgroundColor = '#ffd70033'
+                                if(index % 2 !== 0) {
+                                    row.style.backgroundColor = gold + '33'
                                 }
                             }
 
