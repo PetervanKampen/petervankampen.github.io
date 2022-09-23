@@ -14,6 +14,13 @@
             <a href="./scenario.html">Back</a>
         </nav>
 
+        <div class="toggle">
+            <button class="toggle_option_1" onclick="optionAllClick(1)">Matched Play</button>
+            <button class="toggle_option_2" onclick="optionAllClick(2)">Battle Companies</button>
+            <span class="toggle_slider"></span>
+        </div>
+        
+        <div class="matched_play_all">
         <script>
             fetch('./scenarios.json')
                 .then(response => response.json())
@@ -21,7 +28,7 @@
                     data.scenarios.forEach((scenario, index) => {
 
                         const num = index + 1
-                        document.querySelector('.container').innerHTML += `
+                        document.querySelector('.matched_play_all').innerHTML += `
                         <div class="scenario_${num} scenario box"  onclick="expandScenario(document.querySelector('.scenario_${num}'))">
                             <div class="scenario_heading">
                                 <h3 class="title"></h3>
@@ -136,6 +143,127 @@
                 })
                 .catch(err => console.log(err));
         </script>
+        </div>
+
+        <div class="battle_companies_all" style="display: none">
+            <script>
+                fetch('./bc_scenarios.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        data.scenarios.forEach((scenario, index) => {
+    
+                            const num = index + 1
+                            document.querySelector('.battle_companies_all').innerHTML += `
+                            <div class="bc_scenario_${num} scenario box"  onclick="expandScenario(document.querySelector('.bc_scenario_${num}'))">
+                                <div class="scenario_heading">
+                                    <h3 class="title"></h3>
+                                    <button class="expand">
+                                        &#9660;
+                                    </button>
+                                </div>
+                                <div class="scenario_body">
+    
+                                    <div class="outline">
+                                        <h3>Scenario Outline</h3>
+                                        <p></p>
+                                    </div>
+    
+                                    <div class="layout">
+                                        <h3>Layout</h3>
+                                        <p></p>
+                                        <img src="#" alt="layout_image">
+                                    </div>
+    
+                                    <div class="starting_position">
+                                        <h3>Starting Positions</h3>
+                                        <p></p>
+                                    </div>
+    
+                                    <div class="objectives">
+                                        <h3>Objectives</h3>
+                                        <p></p>
+                                    </div>
+    
+                                    <div class="victory_points">
+                                        <h3>Victory Conditions</h3>
+                                        <ul></ul>
+                                    </div>
+    
+                                    <div class="special_rules hidden">
+                                        <h3>Special Rules</h3>
+                                    </div>
+                                </div>
+                            </div>`
+    
+                            const title = document.querySelector('.bc_scenario_'+num+' .title')
+                            const outline = document.querySelector('.bc_scenario_'+num+' .outline p')      
+                            const starting_position = document.querySelector('.bc_scenario_'+num+' .starting_position p')
+                            const objectives = document.querySelector('.bc_scenario_'+num+' .objectives p')
+                            const victory_points = document.querySelector('.bc_scenario_'+num+' .victory_points ul')
+                            const special_rules = document.querySelector('.bc_scenario_'+num+' .special_rules')
+                            const image = document.querySelector('.bc_scenario_'+num+' .layout img')
+    
+                            title.innerText = scenario.name
+                            outline.innerText = scenario.outline
+                            starting_position.innerText = scenario.starting_position
+                            objectives.innerText = scenario.objectives
+                            image.src = './images/' + scenario.image 
+    
+                            victory_points.innerHTML = '';
+                            scenario.victory_points.forEach(single => {
+                                let li = document.createElement("li");
+                                let span = document.createElement('span')
+                                span.appendChild(document.createTextNode(single.name + ' - '))
+                                span.style.fontWeight = 600;
+                                li.appendChild(span);
+                                li.appendChild(document.createTextNode(single.description));
+                                victory_points.appendChild(li);
+                            })
+    
+                            special_rules.innerHTML = '<h3>Special Rules</h3>';
+                            if(scenario.special_rules[0] !== 'This scenario has no special rules'){
+                                special_rules.classList.remove('hidden')
+                                const gold = getComputedStyle(document.documentElement).getPropertyValue('--gold');
+                                scenario.special_rules.forEach(single => {
+                                    let p = document.createElement('p')
+                                    let span = document.createElement('span')
+                                    span.appendChild(document.createTextNode(`${single.name}: `))
+                                    span.style.fontWeight = 600;
+                                    p.appendChild(span)
+                                    p.appendChild(document.createTextNode(single.description))
+                                    special_rules.appendChild(p)
+                                    if(single.table){
+                                        let table = document.createElement('table')
+                                        const row = table.insertRow();
+                                        row.style.borderBottom = '2px solid ' + gold
+                                        row.style.backgroundColor = gold + '33'
+                                        const cell1 = row.insertCell()
+                                        cell1.appendChild(document.createTextNode('D6'))
+                                        const cell2 = row.insertCell()
+                                        cell2.appendChild(document.createTextNode(('Result')))
+    
+                                        for (let index = 0; index < single.table[0].length; index++) {
+                                            const row = table.insertRow();
+                                            const cell1 = row.insertCell()
+                                            cell1.appendChild(document.createTextNode(single.table[0][index]))
+                                            const cell2 = row.insertCell()
+                                            cell2.appendChild(document.createTextNode(single.table[1][index]))
+                                            if(index % 2 !== 0) {
+                                                row.style.backgroundColor = gold + '33'
+                                            }
+                                        }
+    
+                                        special_rules.appendChild(table)
+                                    }
+                                })        
+                            } else if(!special_rules.classList.contains('hidden')) {
+                                special_rules.classList.add('hidden')
+                            }
+                        })
+                    })
+                    .catch(err => console.log(err));
+            </script>
+            </div>
 
     </div> 
 </body>

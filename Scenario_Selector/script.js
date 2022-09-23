@@ -204,3 +204,20 @@ const optionClick = (select) => {
     const sideContainer = document.querySelector('.side_selection')
     sideContainer.classList.add('hidden')
 }
+
+const optionAllClick = (select) => {
+    const slider = document.querySelector('span.toggle_slider')
+    let posLeft = slider.style.left
+
+    if(select == 1) {
+        slider.style.left = '0%'
+        document.querySelector('.matched_play_all').style.display = 'block'
+        document.querySelector('.battle_companies_all').style.display = 'none'
+    } else {
+        slider.style.left = '50%'
+        document.querySelector('.matched_play_all').style.display = 'none'
+        document.querySelector('.battle_companies_all').style.display = 'block'
+    }
+
+    
+}
