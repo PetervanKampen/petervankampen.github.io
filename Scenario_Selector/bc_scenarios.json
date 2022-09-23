@@ -1,0 +1,575 @@
+{
+    "scenarios": [
+        {
+            "id": 1,
+            "name": "Seize Ground",
+            "outline": "As two companies become locked in a battle of wits and cunning, it becomes apparent that victory can only be seized by claiming key areas of the battlefield. As both leaders rally their followers, a fight for control of the battlefield is about to begin.",
+            "starting_position": "Both players roll a D6, with the highest scoring player choosing their table edge. Players will need five Objective markers. One is placed in the centre of the board. Players then alternate placing the remaining objectives, starting with the player who chose their table edge. No objective can be placed within 8 inch of the edge of the battlefield, or within 12 inch of another.",
+            "objectives": "Both sides must claim as many key areas of the battlefield as possible. Victory will go to the company who can lay claim to the most. An objective will only be considered claimed if there are only friendly models within 3 inch of it. If there are both friendly and enemy models within 3 inch, then it is unclaimed. Once one Battle Company has been Broken, the game might suddenly end. At the end of each turn after this condition has been met, roll a D6. On the result of 1-2, the game ends – otherwise, the battle continues for another turn!",
+            "victory_points": [
+                {
+                    "name": "Victory",
+                    "description": "Your Battle Company has claimed more objectives than your opponent’s."
+                },
+                {
+                    "name": "Defeat",
+                    "description": "Your Opponent’s Battle Company has claimed more objectives than yours."
+                },
+                {
+                    "name": "Draw",
+                    "description": "Both Battle Companies have claimed the same number of objectives."
+                }
+            ],
+            "special_rules": [
+                "This scenario has no special rules"
+            ],
+            "image": "bc/seize_ground.png"
+        },
+        {
+            "id": 2,
+            "name": "Secure the Area",
+            "outline": "Hidden somewhere upon the battlefield lies something of great value to both sides. Whether this is a hoard of treasure, the entrance to a secret passageway, the fallen body of an ally or even something much more valuable; both sides must strive to claim it and defend it at all costs.",
+            "starting_position": "Place an Objective marker in the centre of the board; this is what both sides are fighting over.",
+            "objectives": "Both sides are seeking to lay claim to the objective, and must not only fight their way to it, but also defend it once there. Once one Battle Company has been Broken, the game might suddenly end. At the end of each turn after this condition has been met, roll a D6. On the result of 1-2, the game ends – otherwise, the battle continues for another turn!",
+            "victory_points": [
+                {
+                    "name": "Victory",
+                    "description": "Your Battle Company has at least twice as many models within 3 inch of the objective than your opponent’s."
+                },
+                {
+                    "name": "Defeat",
+                    "description": "Your opponent’s Battle Company has at least twice as many models within 3 inch of the objective than yours."
+                },
+                {
+                    "name": "Draw",
+                    "description": "Any other situation."
+                }
+            ],
+            "special_rules": [
+                {
+                    "name": "Wild Search",
+                    "description": "At the end of your Move phase, roll a D6 for each of your models not on the battlefield and consult the chart below (Hero models can use Might to alter the roll either up or down). Models can’t Charge in the turn that they arrive but otherwise act normally. Roll for each model separately, deploy the model, then roll for the next. Models yet to arrive count as being on the battlefield for the purposes of determining if your force is Broken.",
+                    "table": [
+                        [
+                            1, 
+                            2, 
+                            3, 
+                            4, 
+                            5, 
+                            6
+                        ],
+                        [
+                            "The model does not arrive.",
+                            "The model enters the battlefield from the western board edge.",
+                            "The model enters the battlefield from the eastern board edge.",
+                            "The model enters the battlefield from the southern board edge.",
+                            "The model enters the battlefield from the northern board edge.",
+                            "The model enters the battlefield from any board edge chosen by the controlling player."
+                        ]
+                    ]
+                }
+            ],
+            "image": "bc/secure_the_area.png"
+        },
+        {
+            "id": 3,
+            "name": "A Show of Strength",
+            "outline": "Two Battle Companies have clashed upon a battlefield, engaging in open war. The two leaders must show their skill and strength now more than ever, inspiring their followers to fight on in the face of adversity. Whichever leader can slay the most will no doubt win the day.",
+            "starting_position": "Both players roll a D6, with the highest scoring player choosing their table edge. They then place their Battle Company within 12 inch of their chosen edge. Their opponent then places their Battle Company within 12 inch of the opposite board edge.",
+            "objectives": "Whichever leader can slay the most will be the victor. Note that if your leader is missing this game, use the Sergeant in your Battle Company with the highest points cost instead. The game lasts until the end of a turn in which one Battle Company has been reduced to 25% of its starting models.",
+            "victory_points": [
+                {
+                    "name": "Victory",
+                    "description": "Your leader has killed more models than your opponent’s."
+                },
+                {
+                    "name": "Defeat",
+                    "description": "Your opponent’s leader has killed more models than yours."
+                },
+                {
+                    "name": "Draw",
+                    "description": "Both leaders have killed the same number of models."
+                }
+            ],
+            "special_rules": [
+                "This scenario has no special rules"
+            ],
+            "image": "bc/show_of_strength.png"
+        },
+        {
+            "id": 4,
+            "name": "Claim the Treasure",
+            "outline": "The battlefield has seen skirmishes before, and still has a few trinkets or items of value dotted around. Both Battle Companies are trying to secure as much wealth as they can",
+            "starting_position": "Both players roll a D6, with the highest scoring player choosing their table edge. They then place their Battle Company within 12 inch of their chosen edge. Their opponent then places their Battle Company within 12 inch of the opposite board edge. Place the objectives as shown on the map.",
+            "objectives": "Whichever Battle Company can hold the most objectives will be the winner. The game lasts until the end of a turn in which one Battle Company has been reduced to 25% of its starting models",
+            "victory_points": [
+                {
+                    "name": "Victory",
+                    "description": "Your Battle Company holds more objectives than your opponent’s."
+                },
+                {
+                    "name": "Defeat",
+                    "description": "Your opponent’s Battle Company holds more objectives than yours."
+                },
+                {
+                    "name": "Draw",
+                    "description": "Both Battle Companies hold the same number of objectives."
+                }
+            ],
+            "special_rules": [
+                {
+                    "name": "Objectives",
+                    "description": "The six objectives on the board are Light Objects, as detailed on page 109 of the main rules manual. This means that models may pick up and carry the objectives; in fact, a model will only count as holding an objective once they have picked it up. If a model holding an objective flees, it is immediately dropped where they stood before they fled, or as close as possible. Models may carry more than one objective."
+                }
+            ],
+            "image": "bc/claim_the_treasure.png"
+        },
+        {
+            "id": 5,
+            "name": "Defend the Gate",
+            "outline": "Your company has been tasked with protecting the gates of an allied stronghold, and preventing anyone else from entering. As they guard the gates, an enemy Battle Company has been commanded to break through and claim the stronghold, giving their lord a crucial strategic advantage in the wars to come.",
+            "starting_position": "Both players roll a D6, with the player who scored lowest becoming the Defender. The Defender deploys their Battle Company within 6 inch of the gate as shown on the map. The Attacker then places their entire Battle Company within 24 inch of the southern board edge.",
+            "objectives": "The defending player must try to defend the gate by having their Battle Company within 6 inch of it, whilst keeping the Attacker at bay. Once one Battle Company is reduced to less than 50% of its starting numbers, the game may suddenly end. At the end of each turn after this condition has been met, roll a D6. On a 1-2 the game ends, otherwise it continues for another turn.",
+            "victory_points": [
+                {
+                    "name": "Attacker Victory",
+                    "description": "The Attacker has more models within 6 inch of the gate."
+                },
+                {
+                    "name": "Defender Victory",
+                    "description": "The Defender has more models within 6 inch of the gate."
+                },
+                {
+                    "name": "Draw",
+                    "description": "Any other result."
+                }
+            ],
+            "special_rules": [
+                {
+                    "name": "Let nothing through!",
+                    "description": "Models from the Defender’s Battle Company automatically pass all Courage tests they are required to make."
+                }
+            ],
+            "image": "bc/defend_the_gate.png"
+        },
+        {
+            "id": 6,
+            "name": "Recovery",
+            "outline": "A relic of a bygone age has awoken, drawing all manner of armies and creatures to its power. The leaders of two rival Battle Companies desire it, either to progress their own standing, or to fulfil the task they have been set to reclaim it by their lord or commander – no matter the cost, both must claim it.",
+            "starting_position": "Both players roll a D6, with the highest scoring player choosing their table edge. Players will need five identical Objective markers, one secretly marked as the relic. These should be mixed up so that neither player knows which is the relic. One is placed in the centre of the board. Players then alternate placing the remaining objectives, starting with the player who chose their table edge. No objective can be placed within 12 inch of either player’s board edge, within 6 inch of the edge of the battlefield, or within 8 inch of each other. All models will walk onto the board from their table edge during their first Move phase.",
+            "objectives": "The Battle Companies are searching for the relic, and once it is found, they must escape with it in their grasp. The game lasts until either the relic has been moved off of one board edge, or there are no models left on the battlefield.",
+            "victory_points": [
+                {
+                    "name": "Victory",
+                    "description": "Your Battle Company has moved the relic off of your opponent’s table edge."
+                },
+                {
+                    "name": "Defeat",
+                    "description": "Your opponent’s Battle Company has moved the relic off your table edge."
+                },
+                {
+                    "name": "Draw",
+                    "description": "Neither Battle Company recovers the relic."
+                }
+            ],
+            "special_rules": [
+                {
+                    "name": "The Relic",
+                    "description": "When a model moves into base contact with an Objective marker, flip it over. If it is not the relic, remove it from the game. If it is the relic, the model takes possession of it and all other markers are removed. The relic is treated as a Heavy Object."
+                },
+                {
+                    "name": "The Glories to be Had",
+                    "description": "The model that moves the relic off the board will be richly rewarded. If this is a Warrior, it will count as rolling A Hero in the Making after the game. If this is a Hero, they will receive a free roll on the Experience table, in addition to any other Experience bonuses. If two models simultaneously carry the relic off the board, choose one of them to get the benefits."
+                }
+            ],
+            "image": "bc/recovery.png"
+        },
+        {
+            "id": 7,
+            "name": "Chance Encounter",
+            "outline": "Upon their travels through Middle-earth, two opposing Battle Companies have happened upon each other. A company that is seemingly alone, and with no support in sight, is not an opportunity to pass up lightly. As the companies engage, a solid tactical mind and skill at arms will see victory won.",
+            "starting_position": "Both players roll a D6, with the highest scoring player choosing their table edge. They then place their Battle Company within 12 inch of their chosen edge. Their opponent then places their Battle Company within 12 inch of the opposite board edge.",
+            "objectives": "The leaders of both Battle Companies are looking for a quick victory, without taking too many casualties. The game lasts until the end of a turn in which one Battle Company has been reduced to 25% of its starting models.",
+            "victory_points": [
+                {
+                    "name": "Victory",
+                    "description": "Your opponent’s Battle Company has been reduced to 25% of its starting models and yours has not."
+                },
+                {
+                    "name": "Defeat",
+                    "description": "Your Battle Company has been reduced to 25% of its starting models and your opponent’s has not."
+                },
+                {
+                    "name": "Draw",
+                    "description": "Both Battle Companies have been reduced to 25% in the same turn."
+                }
+            ],
+            "special_rules": [
+                "This scenario has no special rules"
+            ],
+            "image": "bc/chance_encounter.png"
+        },
+        {
+            "id": 8,
+            "name": "Kill the Messenger",
+            "outline": "Two rival Battle Companies have stumbled upon each other in the act of delivering critical information to their allies. Each company designates a member of their warband to deliver a message to their allies, warning them of the approaching enemy. Both Battle Companies must now fight in order to slay the enemy messenger, all whilst keeping their own alive.",
+            "starting_position": "Both players roll a D6, with the highest scoring player choosing their table edge. They then place their Battle Company within 12 inch of the centre of the board in their half of the board. Their opponent then places their Battle Company within 12 inch of the centre of the board in the opposite half of the board.",
+            "objectives": "Both Battle Companies need to find their enemy’s messenger and slay them, but ensure that they keep their own alive. The game lasts until the end of a turn in which one Battle Company has been reduced to 25% of its starting models",
+            "victory_points": [
+                {
+                    "name": "Victory",
+                    "description": "Your Battle Company has slain the enemy messenger and yours is alive."
+                },
+                {
+                    "name": "Defeat",
+                    "description": "Your opponent’s Battle Company has slain your messenger and their messenger is alive."
+                },
+                {
+                    "name": "Draw",
+                    "description": "Both messengers are either alive or have been slain."
+                }
+            ],
+            "special_rules": [
+                {
+                    "name": "The Messenger",
+                    "description": "At the start of the game, secretly note down which of your models is the messenger (this may not be a Hero) – they must survive the game. It is important to not reveal if your opponent has killed your messenger during the game, so as not to hand the advantage over to your opponent. The idea of this Scenario is to try to bluff your opponent into thinking that someone who is not your messenger is, so that they kill them instead of the real messenger."
+                }
+            ],
+            "image": "bc/kill_the_messenger.png"
+        },
+        {
+            "id": 9,
+            "name": "The Wolves Attack",
+            "outline": "Two rival Battle Companies have become embroiled in a skirmish, both trying to gain the upper hand. Yet the sound of battle has drawn other dangers to the fray, and the baying of wolves can now be heard growing ever closer. Bitter rivals must now become makeshift allies, as only by working together can both companies hope to survive.",
+            "starting_position": "For this Scenario, you will need 24 Fell Wargs in addition to both player’s Battle Companies. Both players roll a D6, with the highest scoring player deploying one of their models within 6 inch of the centre of the battlefield. The other player then deploys one of their models also within 6 inch of the centre of the battlefield. Players then alternate deploying models as described above until all models from both Battle Companies have been deployed. The Fell Wargs are then split into four equal packs of six, and each pack is deployed within 6 inch of the centre of a different board edge.",
+            "objectives": "Both Battle Companies are fighting for survival against the oncoming Wargs, yet both are still trying to out perform each other. The game lasts until either all the Fell Wargs have been slain, or both Battle Companies have been wiped out.",
+            "victory_points": [
+                {
+                    "name": "Victory",
+                    "description": "Your Battle Company has models alive and has killed more Fell Wargs than the opposing company."
+                },
+                {
+                    "name": "Defeat",
+                    "description": "Your opponent’s Battle Company has models alive and has killed more Fell Wargs than your company."
+                },
+                {
+                    "name": "Draw",
+                    "description": "Any other result."
+                }
+            ],
+            "special_rules": [
+                {
+                    "name": "The Wargs",
+                    "description": "This Scenario requires 24 Fell Wargs. The Fell Wargs follow the usual profile for a Fell Warg. They will always move first in each Move phase, even before Heroic Moves, and will Charge the nearest model by the shortest possible route. If this is not possible, they will move as quickly as they can towards the nearest model from either Battle Company."
+                },
+                {
+                    "name": "The Enemy of my Enemy",
+                    "description": "Both Battle Companies are forced to work together, at least for now, and so the members of both will count as friendly models to each other. Players will still roll for Priority as normal, with the player that won Priority acting with the models from their Battle Company first in each phase if able."
+                }
+            ],
+            "image": "bc/the_wolves_attack.png"
+        },
+        {
+            "id": 10,
+            "name": "Seize the Outpost",
+            "outline": "Your company has been tasked with taking a remote outpost, one that holds an important strategic position in Middle-earth. It is currently under the control of a band of Orcs who have claimed it for their own. Your company must try to infiltrate the outpost, slay the Orcs and claim it for themselves. However, your company is not the only one who has been tasked with claiming the position; a rival company has been set the same task by their lord. Your company must not only try to capture the outpost, but also prevent their rivals from doing the same in the swirling melee that engulfs it.",
+            "starting_position": "For this Scenario, you will need the outpost defenders; these are 4 Orc Warriors with shield, 4 Orc Warriors with spear, 2 Orc Warriors with Orc bow, and 2 Orc Warriors with two-handed weapon. Both players roll a D6, with the highest scoring player choosing their table edge. They then place their Battle Company within 12 inch of their chosen edge. Their opponent then places their Battle Company within 12 inch of the opposite board edge. Then, starting with the player with Priority, players take it in turns to deploy one model from the outpost’s defenders within the confines of the outpost until all have been deployed. The outpost is the area at least 6 inch away from either deployment zone and at least 12 inch away from the eastern or western board edge.",
+            "objectives": "Both companies are trying to capture the outpost for themselves. Once the outpost's defenders have been reduced to 50% or less of their starting numbers, the game may suddenly end. At the end of each turn after this condition has been met, roll a D6. On a 1-2 the game ends, otherwise it continues for another turn.",
+            "victory_points": [
+                {
+                    "name": "Victory",
+                    "description": "Your Battle Company has the most models within the outpost."
+                },
+                {
+                    "name": "Defeat",
+                    "description": "Your Opponent’s Battle Company has the most models within the outpost."
+                },
+                {
+                    "name": "Draw",
+                    "description": "Any other result."
+                }
+            ],
+            "special_rules": [
+                {
+                    "name": "The Outpost Defenders",
+                    "description": "The Orc Warriors follow the usual profile for Orc Warriors found on page 119 of Armies of The Lord of the Rings. The Orcs will always move first in each Move phase, even before Heroic Moves, and will charge the nearest model by the shortest possible route. If this is not possible, starting with the player without Priority, players may alternate moving Orcs until all have been moved. Orcs armed with an Orc bow that move in this way may only move up to 3 inch and must shoot the nearest enemy model in the Shoot phase."
+                },
+                {
+                    "name": "Defeat the Outpost",
+                    "description": "The outpost defenders may not leave the outpost for any reason"
+                }
+            ],
+            "image": "bc/seize_the_outpost.png"
+        },
+        {
+            "id": 11,
+            "name": "Tame the Beast",
+            "outline": "Somewhere in the wilderness, a lone Troll is causing havoc, smashing its way through nearby settlements and leaving devastation in its wake. The Troll poses an immediate threat to two rival Battle Companies, both of who need it to be brought down. As the two companies track the Troll, they spy each other in the distance. Hunting the Troll has now become a show of dominance as well as a necessity",
+            "starting_position": "A single Cave Troll is placed in the centre of the board. Both players roll a D6, with the highest scoring player choosing their table edge. They then place their Battle Company within 12 inch of their chosen edge. Their opponent then places their Battle Company within 12 inch of the opposite board edge.",
+            "objectives": "Both companies have made it their mission to slay the Troll, whichever is successful will vastly increase its status within the ranks of their army. The game continues until either the Troll has been slain, or no other models remain on the board.",
+            "victory_points": [
+                {
+                    "name": "Victory",
+                    "description": "Your Battle Company has slain the Troll"
+                },
+                {
+                    "name": "Defeat",
+                    "description": "Your Opponent’s Battle Company has slain the Troll."
+                },
+                {
+                    "name": "Draw",
+                    "description": "Neither Battle Company has slain the Troll."
+                }
+            ],
+            "special_rules": [
+                {
+                    "name": "The Troll",
+                    "description": "The Cave Troll follows the usual profile for a Cave Troll. The Troll will always move first in each Move phase, even before Heroic Moves, and will Charge the nearest model by the shortest possible route. If this is not possible, the player without Priority may move the Troll its full Move in a direction of their choice."
+                },
+                {
+                    "name": "The Trollslayer",
+                    "description": " Slaying a Troll is no easy feat, and a model who accomplishes this is clearly set for great things. If this is a Warrior, it will count as rolling A Hero in the Making after the game. If this is a Hero, they will receive a free roll on the Experience table, in addition to any other Experience bonuses."
+                }
+            ],
+            "image": "bc/tame_the_beast.png"
+        },
+        {
+            "id": 12,
+            "name": "Hold the Line",
+            "outline": "One Battle Company has been tasked with guarding a path, mountain pass or similar, preventing anyone from passing through. A rival Battle Company is in desperate need of using the path in order to meet with the rest of their allies, and will have to fight their way through in order to reach them.",
+            "starting_position": "The board should have a road running through the centre of it from north to south. Both players then roll a D6, with the player who scored lowest becoming the Defender. The Defender then deploys their Battle Company within 6 inch of the centre of the board. The Attacker moves their Battle Company onto the board from the southern board edge during their first Move phase",
+            "objectives": "The attacking Battle Company must have as many of their models escape the board via the northern board edge, whilst the Defenders must attempt to prevent them. The game lasts until the Attacker has no more models left on the battlefield.",
+            "victory_points": [
+                {
+                    "name": "Attacker Victory",
+                    "description": "At least 33% of the Attacker’s Battle Company escaped the board via the northern board edge."
+                },
+                {
+                    "name": "Defender Victory",
+                    "description": "Less than 33% of the Attacker’s Battle Company escaped the board via the northern board edge"
+                },
+                {
+                    "name": "Draw",
+                    "description": "This Scenario cannot be drawn."
+                }
+            ],
+            "special_rules": [
+                {
+                    "name": "Rewards of Escape",
+                    "description": "Any models that successfully escapes the board via the northern board edge will gain an additional 1 Experience Point."
+                }
+            ],
+            "image": "bc/hold_the_line.png"
+        },
+        {
+            "id": 13,
+            "name": "Stand your Ground",
+            "outline": "One company has found themselves atop a hill, a highly advantageous position if they can keep it. Yet enemy forces desire it, not only to deny it to their foes but to seize its strategic value for themselves",
+            "starting_position": "In the centre of the board there should be a hill with a diameter of no larger than 12 inch. Both players roll a D6, with the lowest scoring player becoming the Defender. The Defender deploys their Battle Company anywhere upon the hill. The Attacker may then deploy their Battle Company anywhere at least 6 inch away from the hill.",
+            "objectives": "The Defender has been tasked with keeping the hill at all costs, whilst the Attacker must take it for their cause. The game lasts until the end of a turn in which one Battle Company has been reduced to 25% of its starting models.",
+            "victory_points": [
+                {
+                    "name": "Attacker Victory",
+                    "description": "The Attacker has more models on the hill."
+                },
+                {
+                    "name": "Defender Victory",
+                    "description": "The Defender has more models on the hill."
+                },
+                {
+                    "name": "Draw",
+                    "description": "Both Battle Companies have the same number of models on the hill."
+                }
+            ],
+            "special_rules": [
+                {
+                    "name": "Defend the Hill",
+                    "description": "Models on the hill do not need to take Courage tests for being Broken."
+                }
+            ],
+            "image": "bc/stand_your_ground.png"
+        },
+        {
+            "id": 14,
+            "name": "Rescue",
+            "outline": "Whether they have been lured astray or simply got lost in the wilderness, a Hero has become separated from the rest of their Battle Company. Seeing this as an easy opportunity to slay the Hero, their enemies seek to cut them down – providing that they do not suffer heavy losses in the effort.",
+            "starting_position": "Both players roll a D6, with the player who scored lowest becoming the Defender. The Defender selects one Hero from their Battle Company that they must rescue and places them in the centre of the board, along with up to two Warrior models from their Battle Company that are deployed within 3 inch of the Hero. The Attacker then places their entire Battle Company within 15 inch of any board edge.",
+            "objectives": "The defending player must try to save their Hero whilst trying to fend off their attackers. The attacking player must slay their target before they suffer enough casualties to force them to retreat. The game ends when either the target Hero is slain, or the Attacker’s Battle Company is reduced to less than 50% of its starting numbers.",
+            "victory_points": [
+                {
+                    "name": "Attacker Victory",
+                    "description": "The Defender’s Hero has been slain."
+                },
+                {
+                    "name": "Defender Victory",
+                    "description": "The Attacker’s Battle Company has been reduced to less than 50% of its starting models."
+                },
+                {
+                    "name": "Draw",
+                    "description": "Both sides achieve their objective in the same turn."
+                }
+            ],
+            "special_rules": [
+                {
+                    "name": "Surprise Ambush",
+                    "description": "The Attacker always has Priority in the first turn."
+                },
+                {
+                    "name": "To the Rescue!",
+                    "description": "The rest of the Defender’s Battle Company moves onto the board from the opposite board edge to the Attacker at the end of the first turn."
+                },
+                {
+                    "name": "Against the Odds",
+                    "description": "Should the target Hero survive, they will gain an additional 1 Experience Point."
+                }
+            ],
+            "image": "bc/rescue.png"
+        },
+        {
+            "id": 15,
+            "name": "Plunder the Camp",
+            "outline": "A Battle Company has stumbled across an enemy camp during their travels, providing them with a unique opportunity to sabotage their foe and scatter their supplies. In the dead of night the company sneaks up on the campsite, intending to set it alight and slay those that lie within.",
+            "starting_position": "The board will require a camp. This should be the area within 6 inch of the centre of the board marked with fences, hedges or other similar features. The camp should contain a few tents, huts or similar. Both players roll a D6, with the lowest scoring player becoming the Defender. The Defender deploys their Battle Company anywhere within the camp. The Defender then places five Objective markers anywhere within the camp, at least 2 inch away from each other. The Attacker may then deploy their Battle Company anywhere at least 6 inch away from the camp.",
+            "objectives": "The Attacker must set the objectives alight, destroying the Defender’s provisions and equipment, and rendering them all but helpless. Once one Battle Company has been Broken, the game might suddenly end. At the end of each turn after this condition has been met, roll a D6. On the result of 1-2, the game ends – otherwise, the battle continues for another turn!",
+            "victory_points": [
+                {
+                    "name": "Attacker Victory",
+                    "description": "At least four objectives have been set alight."
+                },
+                {
+                    "name": "Defender Victory",
+                    "description": "No more than two objectives have been set alight."
+                },
+                {
+                    "name": "Draw",
+                    "description": "Three objectives have been set alight."
+                }
+            ],
+            "special_rules": [
+                {
+                    "name": "The Dark of Night",
+                    "description": "Due to the reduced visibility, models cannot be targeted by shooting, Magical Powers or special abilities over 6 inch away. However, as it is much harder to avoid a shot in the dark, all shooting attacks gain a bonus of +1 when rolling To Wound"
+                },
+                {
+                    "name": "Light the Fires!",
+                    "description": "During the End phase, any attacking model that is in base contact with an Objective marker that did not make a Shooting attack or participate in the Fight phase (including supporting) may attempt to set it alight. Roll a D6. On a 4+, the objective is set alight. Once a marker is alight it cannot be put out, the flames are too unruly. Any model that moves, or is moved, into base contact with a lit objective is immediately Set Ablaze. A model that has a torch automatically counts as having rolled a 4+ when attempting to set an objective alight. The area within 2 inch of a lit objective counts as daylight, so models in this area can be seen from any distance"
+                },
+                {
+                    "name": "All or Nothing",
+                    "description": "Should the Attacker set all five objectives alight, they will receive an additional 1 Influence Point at the end of the Scenario. Should the Defender prevent all objectives from being set alight, they will receive an additional 1 Influence Point at the end of the Scenario."
+                }
+            ],
+            "image": "bc/plunder_the_camp.png"
+        },
+        {
+            "id": 16,
+            "name": "A Daring Rescue",
+            "outline": "Following their previous encounter, one of the leaders of a company has been taken prisoner at the hands of their enemy, who now threaten to put them to death. The allies of the Hero have tracked their foes until they have made camp and, using stealth, have prepared to launch a daring rescue mission to retrieve their ally before they are killed in cold blood",
+            "starting_position": "The player who is attempting to rescue their Hero is automatically the Attacker. The Attacker places the captured Hero in the centre of the board. The Defender then places their entire Battle Company anywhere within 3 inch of the centre of the board. The Attacker then places their Battle Company anywhere at least 12 inch from the any enemy model",
+            "objectives": "The Attacker is trying to rescue their Hero from enemy hands, whilst the Defender is trying to fend off their foes or, if battle is going ill, slay their prisoner before they can be rescued. The game lasts until either the captured Hero escapes the board or is slain.",
+            "victory_points": [
+                {
+                    "name": "Attacker Victory",
+                    "description": "The captured Hero moves off the board via any table edge."
+                },
+                {
+                    "name": "Defender Victory",
+                    "description": "The captured Hero is slain."
+                },
+                {
+                    "name": "Draw",
+                    "description": "Any other result."
+                }
+            ],
+            "special_rules": [
+                {
+                    "name": "The Prisoner",
+                    "description": "The captured Hero is still a member of the Attacker’s Battle Company, and will move as such in each Move phase. Enemy models may not Charge the prisoner until either the Defender’s Battle Company has been Broken, the prisoner Charges a Defender’s model, or the prisoner has been freed."
+                },
+                {
+                    "name": "Shackled by the Enemy",
+                    "description": "The prisoner has had their hands bound by their captors and their weapons and other wargear taken from them. The Hero counts as unarmed and is without any wargear such as shields, bows or other equipment (though they do still keep their armour). Whilst bound, the prisoner may only ever make a single Attack and may not declare Heroic Actions. An Attacker’s model may free the prisoner from their bonds during the End phase of any turn in which they are in base contact with the prisoner and did not participate in a Fight in the preceding Fight phase. Once the prisoner has been freed, they no longer count as being unarmed – they count as being armed with a dagger for the remainder of the Scenario."
+                }
+            ],
+            "image": "bc/daring_rescue.png"
+        },
+        {
+            "id": 17,
+            "name": "Baggage Train",
+            "outline": "Following their recent escapades, one Battle Company journeys towards their homeland, baggage ponies laden with the spoils of war as offerings to their liege. Yet such a cargo can attract those with dastardly plans, intent on ambushing and stealing the spoils for themselves. Suddenly, one company finds themselves ambushed and surrounded, and must fight to keep hold of what is rightfully theirs.",
+            "starting_position": "Both players roll a D6, with the highest scoring player becoming the Attacker. The Defender deploys their Battle Company within 6 inch of the centre of the southern board edge. They also then deploy five Baggage Ponies touching the southern board edge; riderless horses are ideal for using as the Baggage Ponies. The Attacker then splits their force into two equal halves. They deploy one half within 3 inch of the eastern board edge, and the other within 3 inch of the western board edge.",
+            "objectives": "The Defender is trying to escape to safety with as many of their Baggage Ponies as possible. The Attacker is trying to prevent the Defender from doing so, and in return claim the cargo for themselves. The game lasts until either Battle Company has been reduced to 25% of their starting number.",
+            "victory_points": [
+                {
+                    "name": "Attacker Victory",
+                    "description": "At least three pieces of cargo and at least one model that is not a Baggage Pony have escaped the board via the northern board edge."
+                },
+                {
+                    "name": "Defender Victory",
+                    "description": "The Defender has at least three pieces of cargo in their possession at the end of the game."
+                },
+                {
+                    "name": "Draw",
+                    "description": "Any other result."
+                }
+            ],
+            "special_rules": [
+                {
+                    "name": "The Baggage Ponies",
+                    "description": "This Scenario requires five Baggage Ponies, which will use the profile above. These ponies are moved as part of the Defender’s company, but may never Charge an enemy model. Baggage Ponies do not count towards the Defender’s Break Point, and do not generate Experience Points if killed during the game. Each Baggage Pony is carrying a single piece of cargo."
+                },
+                {
+                    "name": "Cargo",
+                    "description": "The Baggage Ponies all carry some valuable cargo, gold, weapons or other items that are of use. If a Baggage Pony is slain or flees the battlefield, place a 25mm Cargo marker where the model used to be. Any model can pick up a Cargo marker by moving into base contact with it; cargo is a Light Object. For each piece of cargo moved off the board via the northern board edge, the Defender gains an additional 1 Influence Point. For each piece of cargo in the Attacker’s possession at the end of the game, the Attacker gains an additional 1 Influence Point."
+                }
+            ],
+            "image": "bc/baggage_train.png"
+        },
+        {
+            "id": 18,
+            "name": "Infiltrate and Assassinate",
+            "outline": "As one Battle Company prepares to make camp, another sees an opportunity to assassinate their leader, leaving them weakened and disorientated. To this end, one Battle Company prepares to infiltrate the camp of their enemy, find the leader and slay them quickly.",
+            "starting_position": "The board will require a camp. This should be the area within 6 inch of the centre of the board marked with fences, hedges or other similar features. The camp should contain a few tents, huts or similar. Both players roll a D6, with the lowest scoring player becoming the Defender. The Defender deploys their Battle Company anywhere within the camp with their leader (or most expensive Hero if their leader is missing the game) in the middle of the board. The Attacker may then deploy their Battle Company anywhere at least 6 inch away from the camp",
+            "objectives": "The Attacker must try to slay the enemy leader without suffering too many casualties, whilst the Defender must try to keep their leader alive. The game ends when either the Defender’s Hero is slain, or the Attacker’s Battle Company is reduced to less than 50% of its starting numbers.",
+            "victory_points": [
+                {
+                    "name": "Attacker Victory",
+                    "description": "The Defender’s Hero has been slain."
+                },
+                {
+                    "name": "Defender Victory",
+                    "description": "The Attacker’s warband has been reduced to less than 50% of its starting models."
+                },
+                {
+                    "name": "Draw",
+                    "description": "Both objectives have been completed in the same turn."
+                }
+            ],
+            "special_rules": [
+                {
+                    "name": "Sentries",
+                    "description": "All of the Defender’s models start as Sentries. Before each Sentry takes their Move phase, the controlling player must roll on the chart below to see how they get to move this turn. If, during the End phase of any turn, there is an unengaged Sentry within 3 inch and Line of Sight of an enemy model then the alarm has been raised. Once the alarm has been raised, all Sentries revert back to the normal rules for movement for the remainder of the game.",
+                    "table": [
+                        [
+                            1, 
+                            "2-3", 
+                            "4-5", 
+                            6
+                        ],
+                        [
+                            "The Sentry is searching around in its vicinity. It may not Move this turn.",
+                            "The Sentry has been distracted by a noise elsewhere on the board. The opposing player may move the model up to half of its Move allowance in any direction.",
+                            "The Sentry walks carefully to where they believe an intruder to be, the controlling player may move the model up to 3 inch in any direction.",
+                            "The Sentry is convinced it has spotted an intruder and moves as quickly as possible to investigate. The model may move as normal."
+                        ]
+                    ]
+                },
+                {
+                    "name": "Slayer of Men",
+                    "description": "If the Attacker successfully slays the Defender’s Hero, then the model that did so will be rewarded. If this is a Warrior, it will count as rolling A Hero in the Making after the game. If this is a Hero, they will receive a free roll on the Experience table, in addition to any other Experience bonuses."
+                }
+            ],
+            "image": "bc/infiltrate_and_assassinate.png"
+        }
+    ]
+}

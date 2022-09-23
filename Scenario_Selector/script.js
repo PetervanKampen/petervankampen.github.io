@@ -1,3 +1,5 @@
+let sourceFile = './scenarios.json'
+
 const generate = () => {
     const side = randomNum(2)
     const sideContainer = document.querySelector('.side_selection')
@@ -18,7 +20,7 @@ const generate = () => {
     const scenarioResultAll = document.querySelectorAll('.scenario')
     let rolledScenarios = []
 
-    fetch('./scenarios.json')
+    fetch(sourceFile)
         .then(response => response.json())
         .then(data => {
             scenarioResultAll.forEach(singleScenario => {
@@ -40,59 +42,121 @@ const generate = () => {
                 
                 const scenario = data.scenarios[random]
 
-                title.innerText = scenario.name
-                outline.innerText = scenario.outline
-                layout.innerText = scenario.layout
-                starting_position.innerText = scenario.starting_position
-                priority.innerText = scenario.priority
-                objectives.innerText = scenario.objectives
-                image.src = './images/' + scenario.image 
+                if(sourceFile === './scenarios.json') {
 
-                victory_points.innerHTML = '';
-                scenario.victory_points.forEach(single => {
-                    let li = document.createElement("li");
-                    li.appendChild(document.createTextNode(single));
-                    victory_points.appendChild(li);
-                })
+                    title.innerText = scenario.name
+                    outline.innerText = scenario.outline
+                    layout.innerText = scenario.layout
+                    starting_position.innerText = scenario.starting_position
+                    priority.innerText = scenario.priority
+                    objectives.innerText = scenario.objectives
+                    image.src = './images/' + scenario.image 
 
-                special_rules.innerHTML = '<h3>Special Rules</h3>';
-                if(scenario.special_rules[0] !== 'This scenario has no special rules'){
-                    special_rules.classList.remove('hidden')
-                    const gold = getComputedStyle(document.documentElement).getPropertyValue('--gold');
-                    scenario.special_rules.forEach(single => {
-                        let p = document.createElement('p')
-                        let span = document.createElement('span')
-                        span.appendChild(document.createTextNode(`${single.name}: `))
-                        span.style.fontWeight = 600;
-                        p.appendChild(span)
-                        p.appendChild(document.createTextNode(single.description))
-                        special_rules.appendChild(p)
-                        if(single.table){
-                            let table = document.createElement('table')
-                            const row = table.insertRow();
-                            row.style.borderBottom = '2px solid ' + gold
-                            row.style.backgroundColor = gold + '33'
-                            const cell1 = row.insertCell()
-                            cell1.appendChild(document.createTextNode('D6'))
-                            const cell2 = row.insertCell()
-                            cell2.appendChild(document.createTextNode(('Result')))
+                    victory_points.innerHTML = '';
+                    scenario.victory_points.forEach(single => {
+                        let li = document.createElement("li");
+                        li.appendChild(document.createTextNode(single));
+                        victory_points.appendChild(li);
+                    })
 
-                            for (let index = 0; index < single.table[0].length; index++) {
+                    special_rules.innerHTML = '<h3>Special Rules</h3>';
+                    if(scenario.special_rules[0] !== 'This scenario has no special rules'){
+                        special_rules.classList.remove('hidden')
+                        const gold = getComputedStyle(document.documentElement).getPropertyValue('--gold');
+                        scenario.special_rules.forEach(single => {
+                            let p = document.createElement('p')
+                            let span = document.createElement('span')
+                            span.appendChild(document.createTextNode(`${single.name}: `))
+                            span.style.fontWeight = 600;
+                            p.appendChild(span)
+                            p.appendChild(document.createTextNode(single.description))
+                            special_rules.appendChild(p)
+                            if(single.table){
+                                let table = document.createElement('table')
                                 const row = table.insertRow();
+                                row.style.borderBottom = '2px solid ' + gold
+                                row.style.backgroundColor = gold + '33'
                                 const cell1 = row.insertCell()
-                                cell1.appendChild(document.createTextNode(single.table[0][index]))
+                                cell1.appendChild(document.createTextNode('D6'))
                                 const cell2 = row.insertCell()
-                                cell2.appendChild(document.createTextNode(single.table[1][index]))
-                                if(index % 2 !== 0) {
-                                    row.style.backgroundColor = gold + '33'
-                                }
-                            }
+                                cell2.appendChild(document.createTextNode(('Result')))
 
-                            special_rules.appendChild(table)
-                        }
-                    })        
-                } else if(!special_rules.classList.contains('hidden')) {
-                    special_rules.classList.add('hidden')
+                                for (let index = 0; index < single.table[0].length; index++) {
+                                    const row = table.insertRow();
+                                    const cell1 = row.insertCell()
+                                    cell1.appendChild(document.createTextNode(single.table[0][index]))
+                                    const cell2 = row.insertCell()
+                                    cell2.appendChild(document.createTextNode(single.table[1][index]))
+                                    if(index % 2 !== 0) {
+                                        row.style.backgroundColor = gold + '33'
+                                    }
+                                }
+
+                                special_rules.appendChild(table)
+                            }
+                        })        
+                    } else if(!special_rules.classList.contains('hidden')) {
+                        special_rules.classList.add('hidden')
+                    }
+                } else {
+                    title.innerText = scenario.name
+                    outline.innerText = scenario.outline
+                    starting_position.innerText = scenario.starting_position
+                    objectives.innerText = scenario.objectives
+                    image.src = './images/' + scenario.image 
+                    
+                    singleScenario.querySelector('.priority').style.display = 'none'
+
+                    victory_points.innerHTML = '';
+                    scenario.victory_points.forEach(single => {
+                        let li = document.createElement("li");
+                        let span = document.createElement('span')
+                        span.appendChild(document.createTextNode(single.name + ' - '))
+                        span.style.fontWeight = 600;
+                        li.appendChild(span);
+                        li.appendChild(document.createTextNode(single.description));
+                        victory_points.appendChild(li);
+                    })
+
+                    special_rules.innerHTML = '<h3>Special Rules</h3>';
+                    if(scenario.special_rules[0] !== 'This scenario has no special rules'){
+                        special_rules.classList.remove('hidden')
+                        const gold = getComputedStyle(document.documentElement).getPropertyValue('--gold');
+                        scenario.special_rules.forEach(single => {
+                            let p = document.createElement('p')
+                            let span = document.createElement('span')
+                            span.appendChild(document.createTextNode(`${single.name}: `))
+                            span.style.fontWeight = 600;
+                            p.appendChild(span)
+                            p.appendChild(document.createTextNode(single.description))
+                            special_rules.appendChild(p)
+                            if(single.table){
+                                let table = document.createElement('table')
+                                const row = table.insertRow();
+                                row.style.borderBottom = '2px solid ' + gold
+                                row.style.backgroundColor = gold + '33'
+                                const cell1 = row.insertCell()
+                                cell1.appendChild(document.createTextNode('D6'))
+                                const cell2 = row.insertCell()
+                                cell2.appendChild(document.createTextNode(('Result')))
+
+                                for (let index = 0; index < single.table[0].length; index++) {
+                                    const row = table.insertRow();
+                                    const cell1 = row.insertCell()
+                                    cell1.appendChild(document.createTextNode(single.table[0][index]))
+                                    const cell2 = row.insertCell()
+                                    cell2.appendChild(document.createTextNode(single.table[1][index]))
+                                    if(index % 2 !== 0) {
+                                        row.style.backgroundColor = gold + '33'
+                                    }
+                                }
+
+                                special_rules.appendChild(table)
+                            }
+                        })        
+                    } else if(!special_rules.classList.contains('hidden')) {
+                        special_rules.classList.add('hidden')
+                    }
                 }
             })
         })
@@ -120,6 +184,23 @@ const expandScenario = (element) => {
     }
 }
  
-const loadAll = () => {
-    console.log('test')
+const optionClick = (select) => {
+    const slider = document.querySelector('span.toggle_slider')
+    let posLeft = slider.style.left
+
+    if(select == 1) {
+        slider.style.left = '0%'
+        sourceFile = './scenarios.json'
+    } else {
+        slider.style.left = '50%'
+        sourceFile = './bc_scenarios.json'
+    }
+
+    const scenarioResultAll = document.querySelectorAll('.scenario')
+    scenarioResultAll.forEach(single => {
+        single.classList.add('hidden')
+    })
+
+    const sideContainer = document.querySelector('.side_selection')
+    sideContainer.classList.add('hidden')
 }
