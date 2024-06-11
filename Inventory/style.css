@@ -53,7 +53,7 @@ body {
 .content {
     background-color: white;
     display: flex;
-    flex-basis: 100%;
+    flex-direction: column;
     color: var(--text);
     border-color:  var(--bg-accent);
     border-width: 0 2px;
@@ -61,6 +61,49 @@ body {
     padding: 15px;
 }
 
-.faction.collapse > * {
+.content h3.faction-header {
+    margin: 0 auto 10px auto;
+    font-size: 2em;
+}
+
+.faction-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.faction.collapse > div {
     display: none;
+}
+
+.faction {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg);
+    border-style: solid;
+    border-color: var(--bg-accent);
+    border-width: 2px 0;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+}
+
+.faction h3 {
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    padding: 2px 5px;
+}
+
+.mini.grid span {
+    margin: 0px 2px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-container);
+    border: 1px solid var(--bg-accent);
 }

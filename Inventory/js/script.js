@@ -9,22 +9,21 @@ const fetchJSON = (json) => {
 
 const factionContainer = document.querySelector("[js-faction-container]");
 
-let factions = fetchJSON(factionsJSON);
-let minis = fetchJSON(minisJSON);
-
-factions.then(factionData => {
+fetchJSON(factionsJSON).then(factionData => {
     let factionArray = factionData.factions;
 
     if (factionArray.length > 0) {
         factionContainer.innerHTML = '';
 
-        minis.then(miniData => {
+        fetchJSON(minisJSON).then(miniData => {
             let miniArray = miniData.minis;
     
             factionArray.forEach((faction) => {
                 let factionDiv = document.createElement('div');
                 factionDiv.classList.add('faction', 'collapse');
-                factionDiv.innerText = faction.name;
+                let factionNameHeader = document.createElement('h3');
+                factionNameHeader.innerText = faction.name;
+                factionDiv.append(factionNameHeader);
                 factionDiv.addEventListener('click', (e) => {
                     if (factionDiv.classList.contains('collapse')) {
                         factionDiv.classList.remove('collapse');
