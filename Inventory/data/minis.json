@@ -1,0 +1,32 @@
+{
+    "minis": [
+        {
+            "name": "Amdur",
+            "faction": "Easterlings",
+            "amount": "1",
+            "variation": "Mounted + Foot",
+            "isHero": true
+        },
+        {
+            "name": "Easterling Acolyte",
+            "faction": "Easterlings",
+            "amount": "6",
+            "variation": "",
+            "isHero": false
+        },
+        {
+            "name": "Rutabi",
+            "faction": "Easterlings",
+            "amount": "1",
+            "variation": "Foot",
+            "isHero": true
+        },
+        {
+            "name": "Khand King",
+            "faction": "Khand",
+            "amount": "1",
+            "variation": "Chariot + Foot",
+            "isHero": true
+        }
+    ]
+}
